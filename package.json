@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/devmoses/ephy-server/issues"
   },
-  "homepage": "https://github.com/devmoses/ephy-server#readme"
+  "homepage": "https://github.com/devmoses/ephy-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.6"
+  }
 }
