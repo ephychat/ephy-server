@@ -1,0 +1,24 @@
+{
+  "name": "ephy-server",
+  "version": "0.0.1",
+  "description": "ephy's heart (API, database, container, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmoses/ephy-server.git"
+  },
+  "keywords": [
+    "chat",
+    "server",
+    "ephemeral"
+  ],
+  "author": "Moses Thipparthi",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/devmoses/ephy-server/issues"
+  },
+  "homepage": "https://github.com/devmoses/ephy-server#readme"
+}
