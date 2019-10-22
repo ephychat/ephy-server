@@ -4,7 +4,6 @@ const express =  require('express');
       app =  express();
 
 app.use(helmet());
-app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send(`Hello from ${process.env.SERVER_NAME} ${process.env.SERVER_VERSION}`);
