@@ -1,9 +1,10 @@
 {
   "name": "ephy-server",
   "version": "0.0.1",
-  "description": "ephy's heart (API, db, containers, etc.)",
+  "description": "ephy's heart (API, db, containers etc.)",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +23,13 @@
   },
   "homepage": "https://github.com/devmoses/ephy-server#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "helmet": "^3.21.2",
     "mongoose": "^5.7.6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
