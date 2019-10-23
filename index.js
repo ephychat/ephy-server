@@ -1,14 +1,16 @@
-const express =  require('express');
-      helmet =  require('helmet');
-      dotnev = require('dotenv').config();
-      app =  express();
+require('dotenv').config();
+const express = require('express');
+const helmet = require('helmet');
+
+const app = express();
+
+const userRoute = require('./api/routes/userRoute');
 
 app.use(helmet());
+app.use('/users', userRoute);
 
 app.get('/', (req, res) => {
-    res.send(`Hello from ${process.env.SERVER_NAME} ${process.env.SERVER_VERSION}`);
+  res.send(`Hello from ${process.env.SERVER_NAME} ${process.env.SERVER_VERSION}`);
 });
 
-const listener = app.listen(process.env.SERVER_PORT, () => {
-    console.log(`${process.env.SERVER_NAME} ${process.env.SERVER_VERSION} running on ${listener.address().port}`)
-});
+app.listen(process.env.SERVER_PORT);
