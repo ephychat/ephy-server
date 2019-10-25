@@ -35,5 +35,8 @@ module.exports = {
     "no-shadow": [
       "error"
     ],
+    "no-console":[
+      "off"
+    ]
   },
 };
