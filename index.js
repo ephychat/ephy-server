@@ -13,4 +13,4 @@ app.get('/', (req, res) => {
   res.send(`Hello from ${process.env.SERVER_NAME} ${process.env.SERVER_VERSION}`);
 });
 
-app.listen(process.env.SERVER_PORT);
+app.listen(process.env.SERVER_PORT || 3000, process.env.SERVER_HOST || 'localhost');
