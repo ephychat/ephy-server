@@ -1,0 +1,15 @@
+POST http://api.ephy.chat:12540/users/ HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+nickname=foo
+&username=foo
+&password=bar
+&email=foo@bar
+&channels=5dadf2eb298c742d6b25bc79
+
+###
+
+GET http://api.ephy.chat:12540/users/
+###
+
+PUT http://api.ephy.chat:12540/users/foo

@@ -8,10 +8,10 @@ const userSchema = new Schema({
   username: String,
   password: String,
   email: String,
-  type: String,
+  type: { type: String, default: undefined },
   created_on: { type: Date, default: Date.now },
-  channels: { type: Array, default: {} },
-});
+  channels: { type: Array, default: undefined },
+}, { versionKey: false });
 
 const User = mongoose.model('User', userSchema, 'users');
 
