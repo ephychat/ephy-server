@@ -1,12 +1,12 @@
-const express = require('express');
+// const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const app = express();
+// const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 const dbOptions = {
   dbName: process.env.DB_NAME,
